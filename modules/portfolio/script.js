@@ -1,7 +1,6 @@
 // Portfolio
 
   // Navegação
-
     $('.section.portfolio .laptop .nav-right').click(function() {
 
       $('.section.portfolio ul').css('left', '-100%');
@@ -12,11 +11,8 @@
       $('.section.portfolio ul').css('left', '0');
     });
 
-
   // Mostrar sites
-
     function mostraImagem(arg) {
-
       $('.icone.'+arg).click(function() {
         $('.laptop-site').fadeOut(function() {
 

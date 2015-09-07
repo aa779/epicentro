@@ -32,7 +32,7 @@ if ($('.jumbotron.mobile').length > 0) {
 $(function() {
   var slider = $('.slider').unslider({
     dots: true,
-    delay: 4000,
+    delay: 8000,
     speed: 800,
     fluid: true,
     keys: false

@@ -32,7 +32,7 @@ if ($('.jumbotron.mobile').length > 0) {
 $(function() {
   var slider = $('.slider').unslider({
     dots: true,
-    delay: 4000,
+    delay: 6000,
     speed: 800,
     fluid: true,
     keys: false
@@ -132,7 +132,6 @@ $(function() {
 // Portfolio
 
   // Navegação
-
     $('.section.portfolio .laptop .nav-right').click(function() {
 
       $('.section.portfolio ul').css('left', '-100%');
@@ -143,11 +142,22 @@ $(function() {
       $('.section.portfolio ul').css('left', '0');
     });
 
+    // $('.section.portfolio .laptop .icone').click(function() {
+    //   $('html,body').animate(function(){
+    //    scrollTop: $('.section.portfolio nav.ancoraSite').offset().top;
+    //   },1000);
+    //   $('html, body').animate({scrollTop: $('#.section.portfolio nav.ancoraSite').offset().top -100 }, 'slow');
+    // });
+
+  // Ajustar notebook
+  function scrollTop() {
+    var myDiv = document.getElementById('containerDiv');
+    myDiv.innerHTML = variableLongText;
+    myDiv.scrollTop = 0;
+  };
 
   // Mostrar sites
-
     function mostraImagem(arg) {
-
       $('.icone.'+arg).click(function() {
         $('.laptop-site').fadeOut(function() {
 
